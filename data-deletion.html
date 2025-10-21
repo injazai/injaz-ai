@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Deletion Policy — Injaz KW</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="document-page">
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">Injaz <span>AI</span></div>
+            <nav class="main-nav">
+                <a href="index.html#services">Services</a>
+                <a href="index.html#industries">Industries</a>
+                <a href="index.html#process">Process</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#contact" class="btn btn-outline">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="document">
+        <section class="document-hero">
+            <div class="container">
+                <p class="eyebrow">Policy center</p>
+                <h1>Data Deletion Policy</h1>
+                <p class="document-meta">Last updated: October 2025</p>
+            </div>
+        </section>
+
+        <section class="document-content">
+            <div class="container">
+                <article class="document-section">
+                    <h2>How to request deletion</h2>
+                    <p>If you have interacted with Injaz KW’s automation or WhatsApp Business integrations and wish to delete your data, please:</p>
+                    <ol>
+                        <li>Email <a href="mailto:support@injazkw.com">support@injazkw.com</a> with the subject “Data Deletion Request.”</li>
+                        <li>Include your phone number or business name so we can locate your record.</li>
+                        <li>We will confirm receipt within 48 hours and complete deletion within 7 days.</li>
+                    </ol>
+                </article>
+
+                <article class="document-section">
+                    <h2>What will be deleted</h2>
+                    <ul>
+                        <li>WhatsApp Business identifiers (WABA ID, phone number ID).</li>
+                        <li>Message metadata and any stored content.</li>
+                        <li>Associated logs and backups on their next rotation cycle.</li>
+                    </ul>
+                </article>
+
+                <article class="document-section">
+                    <h2>Exceptions</h2>
+                    <p>We may retain minimal data when required by law or for billing, dispute resolution, or security investigation.</p>
+                </article>
+
+                <article class="document-section">
+                    <h2>Confirmation</h2>
+                    <p>Once deletion is complete, we send a confirmation email summarizing the action taken.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <div class="logo">Injaz <span>AI</span></div>
+                <p class="footer-text">Injaz AI is Kuwait’s trusted partner for AI-powered customer experiences. We design, deploy, and optimize chatbots that feel human and deliver business results.</p>
+            </div>
+            <div>
+                <h3>Connect</h3>
+                <ul class="footer-list">
+                    <li><a href="mailto:hello@injaz.ai">hello@injaz.ai</a></li>
+                    <li><a href="https://instagram.com/injazai" target="_blank" rel="noopener">Instagram @injazai</a></li>
+                    <li><a href="https://www.tiktok.com/@injazai" target="_blank" rel="noopener">TikTok @injazai</a></li>
+                    <li>Kuwait City, Kuwait</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Stay in the loop</h3>
+                <form class="newsletter">
+                    <label for="deletion-email" class="sr-only">Email</label>
+                    <input id="deletion-email" type="email" name="email" placeholder="Your email" required>
+                    <button type="submit" class="btn btn-primary">Join</button>
+                </form>
+                <p class="tiny">We respect your inbox. No spam—only actionable AI insights.</p>
+            </div>
+            <div>
+                <h3>Policy links</h3>
+                <ul class="footer-list">
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="data-deletion.html">Data Deletion Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>© <span id="year"></span> Injaz AI. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="privacy.html">Privacy Policy</a>
+                <span>•</span>
+                <a href="data-deletion.html">Data Deletion</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        const newsletterForm = document.querySelector('.newsletter');
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+                const button = this.querySelector('button');
+                button.textContent = 'Subscribed!';
+                button.disabled = true;
+            });
+        }
+    </script>
+</body>
+</html>
